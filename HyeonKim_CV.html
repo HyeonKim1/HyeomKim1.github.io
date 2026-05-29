@@ -1,0 +1,139 @@
+  <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hyeon Kim - CV</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+        margin: 0;
+      }
+
+      .page {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0;
+        box-shadow: none;
+      }
+    }
+    :root { --ink:#111827; --muted:#4b5563; --line:#e5e7eb; --accent:#2563eb; --navy:#111827; --pale:#eff6ff; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:#f3f4f6; color:var(--ink); font-family: Aptos, Calibri, Arial, sans-serif; }
+    .page { width:210mm; min-height:297mm; margin:18px auto; background:#fff; display:grid; grid-template-columns:58mm 1fr; box-shadow:0 18px 45px rgba(15,23,42,.15); }
+    aside { background:var(--navy); color:white; padding:14mm 8mm 10mm; }
+    main { padding:18mm 15mm 12mm; }
+    h1 { font-size:34px; line-height:1; margin:0 0 6px; letter-spacing:-.02em; }
+    h1 .accent { color:#93c5fd; display:block; }
+    aside .role { color:#d1d5db; font-size:13px; margin:0 0 22px; }
+    aside h2 { font-size:11px; letter-spacing:.12em; margin:22px 0 8px; text-transform:uppercase; color:#fff; }
+    aside p, aside li { color:#e5e7eb; font-size:12px; line-height:1.45; }
+    aside ul { list-style:none; padding:0; margin:0; }
+    aside li { margin:5px 0; }
+    aside li::before { content:'•'; color:#93c5fd; font-weight:bold; display:inline-block; width:1em; }
+    .photo-wrap { display:flex; justify-content:center; margin:0 0 16px; }
+    .photo-box { width:34mm; height:42mm; border:1.5px solid rgba(255,255,255,.55); border-radius:14px; display:flex; align-items:center; justify-content:center; text-align:center; color:#dbeafe; font-size:11px; line-height:1.35; background:rgba(255,255,255,.06); overflow:hidden; }
+    .photo-box img { width:100%; height:100%; object-fit:cover; display:block; }
+    .personal-info { margin-top:8px; border-top:1px solid rgba(255,255,255,.16); padding-top:9px; }
+    .info-row { margin:4px 0; font-size:12px; color:#e5e7eb; line-height:1.35; }
+    .info-label { display:block; color:#93c5fd; font-size:10px; letter-spacing:.08em; text-transform:uppercase; margin-bottom:1px; }
+
+    .updated { color:#9ca3af; font-size:10px; margin-top:30px; }
+    main .name { font-size:34px; margin:0; letter-spacing:-.03em; }
+    main .subtitle { color:#374151; font-size:15px; margin:3px 0 18px; }
+    section { margin:17px 0 0; }
+    main h2 { color:var(--accent); font-size:12px; letter-spacing:.12em; text-transform:uppercase; padding-bottom:6px; border-bottom:1px solid var(--line); margin:0 0 10px; }
+    .profile { color:#374151; font-size:13.5px; line-height:1.5; margin:0; }
+    .entry { display:grid; grid-template-columns:34mm 1fr; gap:4mm; margin:9px 0; }
+    .date { color:#6b7280; font-size:12px; line-height:1.35; }
+    .title { font-weight:700; font-size:13.5px; line-height:1.35; }
+    .details { color:#4b5563; font-size:12.5px; margin-top:2px; line-height:1.4; }
+    .placeholder { background:var(--pale); border-left:3px solid var(--accent); padding:9px 11px; color:#374151; font-size:12.5px; line-height:1.45; }
+    .note { color:#6b7280; font-size:11px; font-style:italic; margin-top:18px; }
+    @media print { body { background:#fff; } .page { margin:0; box-shadow:none; width:210mm; min-height:297mm; } }
+  </style>
+</head>
+
+
+<body>
+  <article class="page" contenteditable="false">
+    <aside>
+      <div class="photo-wrap">
+        <div class="photo-box">
+          <!-- To add your photo: replace this box with
+          <img src="profile.jpg" alt="Hyeon Kim profile photo" />
+          and keep the image file in the same folder as this HTML. -->
+          <img src="HyeonKim.jpeg" alt="Hyeon Kim profile photo" />
+        </div>
+      </div>
+
+      <h1>HYEON<span class="accent">KIM</span></h1>
+      <p class="role">Astronomy Graduate Student</p>
+
+      <h2>Contact</h2>
+      <p>Sejong University, Seoul<br>hyeon970526@sju.ac.kr</p>
+
+      <div class="personal-info">
+        <div class="info-row"><span class="info-label">Date of Birth</span>1997.05.26</div>
+      </div>
+
+      <h2>Research Focus</h2>
+      <ul>
+        <li>Cosmological simulations</li>
+        <li>Initial conditions</li>
+        <li>Large-scale structure</li>
+      </ul>
+
+      <h2>Technical Profile</h2>
+      <ul>
+        <li>Python / C</li>
+        <li>N-body simulation analysis</li>
+      </ul>
+
+      <p class="updated">Updated: May 2026</p>
+    </aside>
+
+    <main>
+      <h1 class="name">Hyeon Kim</h1>
+      <p class="subtitle">Department of Astronomy, Sejong University</p>
+
+      <section>
+        <h2>Academic Profile</h2>
+        <p class="profile">Graduate student in astronomy with a focus on precision cosmological simulations and initial-condition systematics for large-scale structure studies.</p>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <div class="entry"><div class="date">2023.03 - Present</div><div><div class="title">Combined MS/Ph.D. in Astronomy</div><div class="details">Department of Astronomy, Sejong University</div></div></div>
+        <div class="entry"><div class="date">2016.03 - 2023.02</div><div><div class="title">Bachelor's Degree in Astronomy</div><div class="details">Department of Astronomy, Sejong University</div></div></div>
+      </section>
+
+      <section>
+        <h2>Publications &amp; Preprints</h2>
+        <div class="placeholder">H. Kim et al., “Non-parametric estimation of the baryon gas fraction and the cosmological bias with clusters”,	arXiv:2603.13763. <em>Preprint</em> </div>
+      </section>
+
+      <section>
+        <h2>Presentations</h2>
+        <div class="entry"><div class="date">2025.09</div><div><div class="title">CosKASI Conference 2025</div><div class="details">Non-parametric estimation of the baryon gas fraction and the cosmological bias with clusters	</div></div></div>	
+        <div class="entry"><div class="date">2023.10</div><div><div class="title">Korean Astronomical Society Fall Meeting 2023</div><div class="details">Constraining Features in the Primordial Power Spectrum with N-Body Simulations</div></div></div>
+      </section>
+
+      <section>
+        <h2>Scholarships &amp; Honors</h2>
+        <div class="entry"><div class="date">2025.04 - 2026.02</div><div><div class="title">KIAS Student Fellow</div><div class="details">Korea Institute for Advanced Study</div></div></div>
+        <div class="entry"><div class="date">2022 Fall</div><div><div class="title">NoYup Cultural Foundation Scholarship</div></div></div>
+        <div class="entry"><div class="date">2022 Spring</div><div><div class="title">NoYup Cultural Foundation Scholarship</div></div></div>
+      </section>
+
+      
+    </main>
+  </article>
+</body>
+</html>
